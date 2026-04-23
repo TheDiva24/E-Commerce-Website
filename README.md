@@ -23,7 +23,7 @@ Validated the backend communication and data integrity using tools like **Postma
 * **Validations:** Verified Status Codes (200, 201, 400, 401, 404), Response Body structure, and Response Time.
 * **Environment:** Collection variables and environment scripts were used to automate token handling.
 
-### 3. Database Testing
+### 3. Database Testing (Sakila Database)
 Ensured data consistency and backend integrity.
 * **Validation Points:** Verified that UI actions (e.g., updating a profile) correctly reflect in the database tables.
 * **Integrity Checks:** Verified Primary/Foreign key constraints and data types for the `Users`, `Products`, and `Orders` tables.
