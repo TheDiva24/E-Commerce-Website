@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="AutomationExercise - Full UI Test Suite" verbose="1" thread-count="1">
+
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+
+    <test name="Authentication Tests">
+        <classes>
+            <class name="com.automationexercise.ui.TC01_RegisterUserTest"/>
+            <class name="com.automationexercise.ui.TC02_LoginUserCorrectTest"/>
+            <class name="com.automationexercise.ui.TC03_LoginUserIncorrectTest"/>
+            <class name="com.automationexercise.ui.TC04_LogoutUserTest"/>
+            <class name="com.automationexercise.ui.TC05_RegisterWithExistingEmailTest"/>
+        </classes>
+    </test>
+
+    <test name="Navigation Tests">
+        <classes>
+            <class name="com.automationexercise.ui.TC06_ContactUsFormTest"/>
+            <class name="com.automationexercise.ui.TC07_VerifyTestCasesPageTest"/>
+        </classes>
+    </test>
+
+    <test name="Products Tests">
+        <classes>
+            <class name="com.automationexercise.ui.TC08_VerifyAllProductsTest"/>
+            <class name="com.automationexercise.ui.TC09_SearchProductTest"/>
+        </classes>
+    </test>
+
+    <test name="Subscription Tests">
+        <classes>
+            <class name="com.automationexercise.ui.TC10_SubscriptionHomePageTest"/>
+            <class name="com.automationexercise.ui.TC11_SubscriptionCartPageTest"/>
+        </classes>
+    </test>
+
+    <test name="Cart Tests">
+        <classes>
+            <class name="com.automationexercise.ui.TC12_AddProductsToCartTest"/>
+            <class name="com.automationexercise.ui.TC13_VerifyProductQuantityTest"/>
+            <class name="com.automationexercise.ui.TC17_RemoveProductsFromCartTest"/>
+        </classes>
+    </test>
+
+    <test name="Checkout and Order Tests">
+        <classes>
+            <class name="com.automationexercise.ui.TC14_PlaceOrderRegisterDuringCheckoutTest"/>
+            <class name="com.automationexercise.ui.TC15_PlaceOrderRegisterBeforeCheckoutTest"/>
+            <class name="com.automationexercise.ui.TC16_PlaceOrderLoginBeforeCheckoutTest"/>
+            <class name="com.automationexercise.ui.TC23_VerifyAddressDetailsInCheckoutTest"/>
+            <class name="com.automationexercise.ui.TC24_DownloadInvoiceTest"/>
+        </classes>
+    </test>
+
+    <test name="Category and Brand Tests">
+        <classes>
+            <class name="com.automationexercise.ui.TC18_ViewCategoryProductsTest"/>
+            <class name="com.automationexercise.ui.TC19_ViewBrandProductsTest"/>
+        </classes>
+    </test>
+
+    <test name="Search and Review Tests">
+        <classes>
+            <class name="com.automationexercise.ui.TC20_SearchProductsAndVerifyCartAfterLoginTest"/>
+            <class name="com.automationexercise.ui.TC21_AddReviewOnProductTest"/>
+            <class name="com.automationexercise.ui.TC22_AddToCartFromRecommendedItemsTest"/>
+        </classes>
+    </test>
+
+    <test name="Scroll Tests">
+        <classes>
+            <class name="com.automationexercise.ui.TC25_ScrollUpWithArrowTest"/>
+            <class name="com.automationexercise.ui.TC26_ScrollUpWithoutArrowTest"/>
+        </classes>
+    </test>
+
+</suite>
