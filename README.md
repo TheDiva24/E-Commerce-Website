@@ -1,4 +1,4 @@
-# 🧪 AutomationExercise — Full-Stack Test Automation Framework
+# 🧪 AutomationExercise Full-Stack Test Automation Framework
 
 [![Java](https://img.shields.io/badge/Java-17%2B-orange?logo=java)](https://www.oracle.com/java/)
 [![Selenium](https://img.shields.io/badge/Selenium-4.21.0-green?logo=selenium)](https://www.selenium.dev/)
@@ -9,7 +9,7 @@
 [![Tests](https://img.shields.io/badge/Tests-40%20%7C%2026%20UI%20%2B%2014%20API-brightgreen)]()
 [![Status](https://img.shields.io/badge/Status-All%20Passing-success)]()
 
-> A production-grade, Page Object Model automation framework that fully tests the [automationexercise.com](https://automationexercise.com) web application — covering all 26 official UI test cases and 14 REST API test cases, with beautiful Allure HTML reports.
+> A production-grade, Page Object Model automation framework that fully tests the [automationexercise.com](https://automationexercise.com) web application covering all 26 official UI test cases and 14 REST API test cases, with beautiful Allure HTML reports.
 
 ---
 
@@ -35,13 +35,13 @@
 
 ## About the Project
 
-This framework was built as a **complete QA automation solution** for the `automationexercise.com` practice website, following best practices used by senior QA engineers:
+This framework was built as a **complete QA automation solution** for the `automationexercise.com` practice website, following best practices used by QA engineers and Testing teams:
 
 - **Page Object Model (POM)** separates test logic from UI interaction details
-- **Data-driven** with a `DataGenerator` utility that creates unique test users on the fly — no hardcoded credentials
-- **Ad-resilient clicks** — the site serves full-page Google Ads that intercept Selenium clicks; the framework automatically falls back to JavaScript injection when this occurs
-- **Eager page load strategy** — prevents 30-second renderer timeouts caused by heavy ad scripts
-- **Allure reporting** — every test run generates a beautiful, interactive HTML report with steps, screenshots, and severity levels
+- **Data-driven** with a `DataGenerator` utility that creates unique test users on the fly no hardcoded credentials
+- **Ad-resilient clicks** the site serves full-page Google Ads that intercept Selenium clicks; the framework automatically falls back to JavaScript injection when this occurs
+- **Eager page load strategy** prevents 30 second renderer timeouts caused by heavy ad scripts
+- **Allure reporting** every test run generates a beautiful, interactive HTML report with steps, screenshots, and severity levels
 
 ---
 
@@ -88,7 +88,7 @@ mvn -version
 ### 3. Google Chrome Browser
 Download from [google.com/chrome](https://www.google.com/chrome/).
 
-> The framework uses **WebDriverManager** to automatically download the correct ChromeDriver version — **you do NOT need to manually install ChromeDriver**.
+> The framework uses **WebDriverManager** to automatically download the correct ChromeDriver version **you do NOT need to manually install ChromeDriver**.
 
 ### 4. WinRAR or 7-Zip (for the target folder)
 The `target/` build folder is included as `target.rar` in this repository.
@@ -159,7 +159,7 @@ AutomationExercise/
 └── testng-api.xml
 ```
 
-> ⚠️ If you skip this step, the **Allure report viewer will still work** — it will just start with an empty report history. The tests themselves will still run and generate fresh results.
+> ⚠️ If you skip this step, the **Allure report viewer will still work** it will just start with an empty report history. The tests themselves will still run and generate fresh results.
 
 ---
 
@@ -176,7 +176,7 @@ Expected output:
 [SUCCESS] All sources compiled successfully - no errors!
 ```
 
-If you see compilation errors, double-check your Java version and Maven path.
+If you see compilation errors, double check your Java version and Maven path.
 
 ---
 
@@ -205,7 +205,7 @@ run.bat report
 
 ### PowerShell Users
 
-A `run.ps1` script is also provided. Right-click it and choose **Run with PowerShell**, or run from terminal:
+A `run.ps1` script is also provided. Right click it and choose **Run with PowerShell**, or run from terminal:
 
 ```powershell
 .\run.ps1 ui
